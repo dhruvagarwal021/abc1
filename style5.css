@@ -1,0 +1,93 @@
+p
+{
+    cursor:pointer;
+
+    /*Border Properties*/
+    /*border-width: 4px;
+    border-style: dotted;
+    border-color: green;*/
+
+    border: 4px dotted red;/*shorthand property*/
+    border-radius: 40px;
+    border-width: 10px;
+    
+    /*Padding properties*/
+    /*padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding: 10px[t] 40px[r] 30px[b] 40px[l]; shorthand property*/
+
+    padding: 20px 40px 20px 30px;
+
+    /*
+    1.padding having 1 value then it apllies to all sides
+    2.when having two values then 1st value represent top-bottom and 2nd value represent left-right.
+    3.when 3 values then, 1 value top, 2 value right-left, 3 value bottom.
+    */
+
+    margin; 30px 50px;
+}
+
+div
+{
+    height: 200px;
+    width: 200px;
+}
+
+#b1
+{
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+}
+#b2
+{
+    background-color: green;
+    /*position: relative; if the position is static then prop such as left top bottom right can't be used but if position is relative then we can use the left right top bottom
+    left: 220px;
+    top: -200px;*/
+    position: absolute;
+    z-index: 2;
+}
+#b3
+{
+    background-color: blue;
+    /*position: relative; if the position is static then prop such as left top bottom right can't be used but if position is relative then we can use the left right top bottom
+    left: 440px;
+    top: -400px;*/
+
+    position: absolute;
+    z-index: 0;
+
+    /*
+    1.using postion as absolute in all three makes all the boxes overlapp on each other
+    2.We can make any box on the top using z-index value.greater z-index value means box is on the top.Z-index is highest means 
+      box is on the top and z-index is lowest means box is on the bottom.
+    3.if two boxes have same z-index then box whih is defined later will be at higher position.
+    4.Position=absolute also enables top,left,right,bottom.
+    */
+}
+
+#b4
+{
+    background-color: orange;
+    width: 100%;
+    position: fixed;/*
+    1.Now even if you scroll the page the box will remain at its position(immovable).
+    2.U can use top,bottom,left,right when position=fixed.
+    */
+    top:500px;
+}
+
+#b5
+{
+    background-color: magenta;
+    position: sticky;
+    /*
+    1.sticky means both fixed and relative.
+    2.if you don't use top,bottom,left,right then it is fixed.
+    3.but if you use top,..etc then it will scroll till the position u decided but after that it will become fixed.
+    */
+    top: 200px;
+}
