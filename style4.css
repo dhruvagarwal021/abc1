@@ -1,0 +1,72 @@
+h1
+{
+    color: rgb(255,0,0);
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+}
+h2
+{
+    color: rgba(255, 0, 0, 0.571) /* 4th value corresponds to intensity of the colour , it varies between 0 to 1 */;
+    text-align: left; /* by default left aligned*/
+    text-decoration-line: overline;
+    text-decoration-color: green;
+    text-decoration-thickness: 7px;
+}
+h3
+{
+    color: #0f0;
+    text-align: right;
+    text-decoration: 4px dashed magenta underline; /* this property of writing the above four styles in a single line is called as shorthand property.(The order of writing the properties doesn't matter really here.) */
+}
+h4
+{
+    text-indent: 100px;/*100 pixel of indent space given before and then the content is displayed*/
+    letter-spacing: 5px;/*between each letter of the content the spacing is 5 pixels*/
+    word-spacing: 20px;/* 20 pixels of space between every words of the content*/
+    text-transform: lowercase;
+}
+#i1
+{
+    white-space: pre;/* Making white spaces preserved so the first white spaces are printed and then the main content. */
+    text-decoration: underline double 2px green;
+    /* 1em=16 pixels */
+    font-family:cursive;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 50px;
+    font-variant:small-caps;
+    text-transform: capitalize;
+    background-image: url(./TT-FALL\ INTRA.png);
+    background-repeat: repeat;
+    background-size: 500px;
+    background-attachment:fixed;
+}
+body
+{
+    background-color: yellow;
+}
+h5
+{
+    font-size: 155px;
+    background-color: cyan;
+    background-image: url(./TT-FALL\ INTRA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: 300px;
+    background-position-x: right;
+}
+.c2
+{
+    background-color: orange;
+    height: 50vh;
+    width: 100%;
+}
+.c3
+{
+    background-color: aqua;
+    height: 100vh;/* vh refers to view port height.*/
+    width: 50%;
+}
